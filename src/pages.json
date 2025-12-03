@@ -2,14 +2,48 @@
   "easycom": {
     "autoscan": true,
     "custom": {
-      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
     }
   },
   "pages": [
     {
-      "path": "pages/index/index",
+      "path": "pages/splash/index",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/guide/guide-1",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/guide/guide-2",
+      "style": {
+        "navigationStyle": "custom",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/guide/guide-3",
+      "style": {
+        "navigationStyle": "custom",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/guide/guide-4",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/guide/guide-5",
+      "style": {
+        "navigationStyle": "custom"
       }
     },
     {
@@ -17,8 +51,99 @@
       "style": {
         "navigationStyle": "custom"
       }
+    },
+    {
+      "path": "pages/agreement/index"
+    },
+    {
+      "path": "pages/huaLu/index",
+      "style": {
+        "navigationStyle": "custom",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/huaLu/aiConversation",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/hiddenRealm/index",
+      "style": {
+        "navigationStyle": "custom",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/loveBox/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/dewdrop/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/dewdrop/record",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/archive/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/archive/card",
+      "style": {
+        "navigationStyle": "custom"
+      }
     }
   ],
+  "tabBar": {
+    "color": "#989898",
+    "selectedColor": "#0F5020",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/huaLu/index",
+        "text": "花禄",
+        "iconPath": "static/images/tabbar/tabbar-1.png",
+        "selectedIconPath": "static/images/tabbar/tabbar-1-select.png"
+      },
+      {
+        "pagePath": "pages/hiddenRealm/index",
+        "text": "心神秘境",
+        "iconPath": "static/images/tabbar/tabbar-2.png",
+        "selectedIconPath": "static/images/tabbar/tabbar-2-select.png"
+      },
+      {
+        "pagePath": "pages/loveBox/index",
+        "text": "爱情宝盒",
+        "iconPath": "static/images/tabbar/tabbar-3.png",
+        "selectedIconPath": "static/images/tabbar/tabbar-3-select.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "static/images/tabbar/tabbar-4.png",
+        "selectedIconPath": "static/images/tabbar/tabbar-4-select.png"
+      }
+    ]
+  },
+  "usecomponents": {},
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",

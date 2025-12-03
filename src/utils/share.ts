@@ -1,5 +1,3 @@
-import { onShareAppMessage } from '@dcloudio/uni-app';
-
 export const registerShareMenu = {
   //注册分享菜单
   onLoad() {
